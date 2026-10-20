@@ -1,6 +1,6 @@
 
-# CIT 384 - HW7 Resume Site
+# CIT 384 - HW8 Resume Site
 
-Resume website for CIT 384 Homework 7.
+Resume website for CIT 384 Homework 8.
 
-Website: https://baigfizza.github.io/CIT-384-HW7/
+Website: https://baigfizza.github.io/CIT-384-HW8/
