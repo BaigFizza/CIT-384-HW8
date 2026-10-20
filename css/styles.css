@@ -1,0 +1,389 @@
+/*
+Color Palette
+
+#27313B - Deep Charcoal
+#3E5963 - Slate Blue
+#D8E2E1 - Soft Sage
+#F4F3EF - Warm Off White
+#FFFFFF - White
+*/
+
+
+/* Global Styles
+------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #27313B;
+    background-color: #F4F3EF;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+p,
+li {
+    line-height: 1.7;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+
+/* Navigation
+------------------------------------*/
+
+nav {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 18px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #D8E2E1;
+}
+
+nav a {
+    color: #27313B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 18px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    color: #3E5963;
+}
+
+header,
+section,
+footer {
+    scroll-margin-top: 100px;
+}
+
+
+/* Header
+------------------------------------*/
+
+header {
+    background-color: #27313B;
+    color: #FFFFFF;
+}
+
+header .content-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 6px solid #D8E2E1;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+header .profile-img {
+    padding-right: 0;
+    min-height: 0;
+}
+
+header .column-wide {
+    width: 70%;
+    min-height: 0;
+    padding-left: 20px;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    color: #D8E2E1;
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+header p {
+    color: #F4F3EF;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.location {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* Work Experience
+------------------------------------*/
+
+.work-experience {
+    background-color: #F4F3EF;
+}
+
+.work-experience h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.job {
+    overflow: hidden;
+    padding: 22px 0;
+    border-bottom: 1px solid #D8E2E1;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job .column-narrow,
+.job .column-wide {
+    min-height: 0;
+}
+
+.job .column-narrow {
+    padding-right: 20px;
+}
+
+.job h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.company {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.date {
+    color: #3E5963;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.job .column-wide p:first-child,
+.job .column-wide ul:first-child {
+    margin-top: 0;
+}
+
+.job .column-wide ul {
+    padding-left: 22px;
+}
+
+.job .column-wide p,
+.job .column-wide li {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* Education
+------------------------------------*/
+
+.education {
+    background:
+        linear-gradient(
+            rgba(216, 226, 225, 0.85),
+            rgba(216, 226, 225, 0.85)
+        ),
+        url("../images/education-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.education h2 {
+    margin-bottom: 35px;
+}
+
+.education-details {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.education-details h3 {
+    font-size: 22px;
+}
+
+
+/* Footer
+------------------------------------*/
+
+footer {
+    background-color: #27313B;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    color: #D8E2E1;
+}
+
+.contact-info {
+    margin: 25px 0;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #3E5963;
+}
+
+.contact-info a:hover {
+    color: #D8E2E1;
+}
+
+.contact-info i {
+    margin-right: 6px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design
+------------------------------------*/
+
+@media screen and (max-width: 750px) {
+
+    nav a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+
+    .content-wrap {
+        padding: 30px 20px;
+    }
+
+    .column-narrow,
+    .column-wide {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        min-height: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header .content-wrap {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    header .profile-img {
+        width: 190px;
+        max-width: 100%;
+        height: 190px;
+        display: block;
+        margin: 0 auto 25px;
+        padding: 0;
+    }
+
+    header .column-wide {
+        width: 100%;
+        float: none;
+        padding: 0;
+        min-height: 0;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .job {
+        padding: 20px 0;
+    }
+
+    .job .column-narrow,
+    .job .column-wide {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        min-height: 0;
+    }
+
+    .work-experience h2 {
+        margin-bottom: 25px;
+    }
+}
